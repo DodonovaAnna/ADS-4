@@ -16,7 +16,7 @@ int binSearch(int *arr, int left, int right, int value, bool firstOne) {
       right = mid - 1;
     }
   }
-  return pos;
+  return p;
 }
 int countPairs1(int *arr, int lenght, int value) {
   int count = 0;
