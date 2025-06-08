@@ -4,7 +4,7 @@ int binSearch(int *arr, int left, int right, int value, bool firstOne) {
   while (left <= right) {
     int mid = left + (right - left) / 2;
     if (arr[mid] == value) {
-      pos = mid;
+      p = mid;
       if (firstOne) {
         right = mid - 1;
       } else {
