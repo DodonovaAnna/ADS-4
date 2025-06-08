@@ -48,9 +48,9 @@ int countPairs3(int *arr, int lenght, int value) {
   int countAll = 0;
   for (int i = 0; i < lenght; i++) {
     int item = value - arr[i];
-    int firstItem = binSearch(arr, i + 1, len - 1, item, true);
+    int firstItem = binSearch(arr, i + 1, lenght - 1, item, true);
     if (firstItem != -1) {
-        int lastItem = binSearch(arr, i + 1, len - 1, item, false);
+        int lastItem = binSearch(arr, i + 1, lenght - 1, item, false);
         countAll+= (lastItem - firstItem + 1);
     }
   }
